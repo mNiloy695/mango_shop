@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/style.css">
+     <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    <title>Mango Shop</title>
+  </head>
+  <body>
+    <div id='navbar'>
+
+    </div>
+    
+    <div class="banner-section row mt-5 " id="banner">
+     
+      
+    </div>
+    
+  <div class="row mt-2 main-list">
+    <div class='p-4'>
+      <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        Sort By category
+      </a>
+      <div class="offcanvas offcanvas-start bg-info" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body ">
+          <div class="dropdown  mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Categories
+            </button>
+            <ul class="dropdown-menu bg-warning" id="ul">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 class="text-center title text-dark">Our Product's</h1>
+    <div id='mango-container'   class="mango-container p-4 d-flex flex-wrap col-12">
+      
+      </div>
+      
+    </div>
+  </div>
+
+  <div aria-label="Page navigation example" id="page">
+    <ul class="pagination  justify-content-center" id="pag">
+     
+    </ul>
+  </div>
+
+  
+   
+  <!-- Review section -->
+   <div class="review-box mt-5">
+    <h1 class="text-center  text-bold m-5">CUSTOMER REVIEW'S</h1>
+    <div class="swiffy-slider slider-item-show2 slider-item-reveal slider-nav-outside slider-nav-round slider-nav-visible slider-indicators-outside slider-indicators-round slider-indicators-dark slider-nav-animation slider-nav-animation-fadein">
+      <ul class="slider-container py-4" id="slide-ul">
+       
+          
+
+      </ul>
+  
+      <button type="button" class="slider-nav" aria-label="Go left"></button>
+      <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
+  
+      <div class="slider-indicators">
+          <button class="" aria-label="Go to slide"></button>
+          <button aria-label="Go to slide" class=""></button>
+          <button aria-label="Go to slide" class="active"></button>
+          <button aria-label="Go to slide"></button>
+          <button aria-label="Go to slide"></button>
+      </div>
+  </div>
+</div>
+  
+<h1 class='text-center m-3 text-dark text-bold'>CONTACT WITH US</h1>
+  <footer id="footer">
+    
+  </footer>
+  <script src="./js/handle_pagination.js"></script>
+  <script src='./js/contact_user.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+  <script src="./js/footer.js"></script>
+  <script src='./js/category.js'></script>
+    <script src='js/auth.js'></script>
+    <script src='js/navbar.js'></script>
+    <script src='js/mango_list_fetch.js'></script>
+    <script src="./js/carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

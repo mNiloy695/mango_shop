@@ -1,0 +1,7 @@
+ .card{
+    width: 60%;
+    box-shadow:4px 4px 8px 8px;
+    align-items: center;
+    background:linear-gradient(rgb(237, 201, 201),rgb(135, 156, 181));
+    font-size: large;
+  } 

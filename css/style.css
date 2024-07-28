@@ -1,0 +1,132 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    /* background-color: rgb(182, 243, 243); */
+    background:linear-gradient(rgb(131, 163, 199),rgb(102, 171, 182));
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card{
+    box-shadow:2px 2px 8px 2px;
+    align-items: center;
+    border-radius: 20px;
+    font-size: small;
+    background: linear-gradient(rgb(223, 212, 212),rgb(247, 247, 247));
+
+  }
+.details-card
+{
+    width: 60%;
+    box-shadow:4px 4px 8px 8px;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    background:linear-gradient(rgb(237, 201, 201),rgb(135, 156, 181));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card img{
+    width:150px;
+    height: 150px;
+    border-radius: 70px;
+   
+}
+#mango-container{
+    justify-content:start;
+    gap: 40px;
+    margin: 5px;
+    
+}
+
+.main-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    /* gap: 10px; */
+
+}
+
+.login{
+    box-shadow:4px 4px 8px 8px;
+    align-items: center;
+    height:30%;
+    padding:8%;
+    border-radius:20px;
+    background: linear-gradient(rgb(145, 191, 238),rgb(130, 138, 236));
+}
+
+.registration{
+    box-shadow:4px 4px 8px 8px;
+    border-radius:20px;
+    align-items: center;
+    height:30%;
+    padding: 10px;
+    background: linear-gradient(rgb(145, 191, 238),rgb(112, 118, 184));
+}
+
+.banner-section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.review-box{
+    width: 70%;
+    margin: auto;
+}
+
+.review{
+    height:180px;
+    width: 300px;
+    text-align: center;
+    background: linear-gradient(rgb(223, 212, 212),rgb(247, 247, 247));
+}
+a{
+    text-decoration: none;
+}
+
+.single-mango-review-list{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+   justify-content: center;
+    border-radius: 20px;
+}
+
+.address_form
+{
+    align-items: center;
+    box-shadow:4px 4px 8px 8px;
+    height:30%;
+    padding:3%;
+    margin: auto;
+    border-radius:20px;
+    background: linear-gradient(rgb(145, 127, 120),rgb(203, 102, 119));
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+#page{
+    display: flex;
+    justify-content:center;
+    margin: 15px;
+
+}
+#footer
+{
+    background:linear-gradient(rgb(248, 242, 242),rgb(189, 193, 217));
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.dasboard{
+    background: linear-gradient(rgb(129, 129, 206),rgb(195, 195, 120),rgb(194, 123, 123));
+}
