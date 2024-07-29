@@ -20,7 +20,8 @@ body{
   }
 .details-card
 {
-    width: 60%;
+    
+    width: 55%;
     box-shadow:4px 4px 8px 8px;
     align-items: center;
     justify-content: center;
@@ -130,3 +131,14 @@ a{
 .dasboard{
     background: linear-gradient(rgb(129, 129, 206),rgb(195, 195, 120),rgb(194, 123, 123));
 }
+.contact{
+    background: linear-gradient(rgb(134, 134, 147),gray);
+}
+/* main{
+   height: 100vh;
+} */
+.table{
+    
+    width: 90%; 
+    margin: auto;
+ }
