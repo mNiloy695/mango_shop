@@ -37,7 +37,7 @@ const bannerHandle=()=>{
     banner.innerHTML=`
       <div class="text-sec col-lg-4 col-sm-12 col-md-4">
       <h1>Welcome To our Shop!</h1>
-        <p class='mt-2'>Discover a world of trust and taste at MANGO SHOP, where our commitment to quality and customer satisfaction is unparalleled. We specialize in handpicked mangoes sourced directly from trusted orchards worldwide, ensuring each fruit reaches you at its ripest. Our dedication to freshness and flavor guarantees a delightful experience with every bite. With convenient delivery options and a diverse selection of mango varieties, from the exotic to the familiar, we cater to every palate. Join our community of mango enthusiasts and embark on a journey of flavor and satisfaction. Trust us to deliver perfection to your doorstep.
+        <p class='mt-2'>Discover a world of trust and taste at Mango Haven, where our commitment to quality and customer satisfaction is unparalleled. We specialize in handpicked mangoes sourced directly from trusted orchards worldwide, ensuring each fruit reaches you at its ripest. Our dedication to freshness and flavor guarantees a delightful experience with every bite. With convenient delivery options and a diverse selection of mango varieties, from the exotic to the familiar, we cater to every palate. Join our community of mango enthusiasts and embark on a journey of flavor and satisfaction. Trust us to deliver perfection to your doorstep.
        </p>
         </div>
        <div class="image-sec col-lg-6 col-md-6 col-sm-12">
