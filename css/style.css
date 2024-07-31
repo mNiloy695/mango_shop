@@ -63,8 +63,7 @@ html,body{
 .login{
     box-shadow:4px 4px 8px 8px;
     align-items: center;
-    height:30%;
-    padding:8%;
+    padding:3%;
     border-radius:20px;
     background: linear-gradient(rgb(147, 148, 148),rgb(244, 244, 249));
 }
@@ -73,7 +72,6 @@ html,body{
     box-shadow:4px 4px 8px 8px;
     border-radius:20px;
     align-items: center;
-    height:30%;
     padding: 10px;
     background: linear-gradient(rgb(147, 148, 148),rgb(244, 244, 249));
 }
