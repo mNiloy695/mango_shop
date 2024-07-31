@@ -2,6 +2,9 @@
     width: 60%;
     box-shadow:4px 4px 8px 8px;
     align-items: center;
-    background:linear-gradient(rgb(237, 201, 201),rgb(135, 156, 181));
+    background-image: url("/bg_.jpg");
+    background-size: cover;
+    color:white;
+    background-repeat: no-repeat;
     font-size: large;
   } 

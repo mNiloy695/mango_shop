@@ -6,7 +6,11 @@
 
 body{
     /* background-color: rgb(182, 243, 243); */
-    background:linear-gradient(rgb(131, 163, 199),rgb(102, 171, 182));
+
+    background-image: url("/white.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -15,7 +19,9 @@ body{
     align-items: center;
     border-radius: 20px;
     font-size: small;
-    background: linear-gradient(rgb(223, 212, 212),rgb(247, 247, 247));
+    background-image: url("/white.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 
   }
 .details-card
@@ -26,11 +32,14 @@ body{
     align-items: center;
     justify-content: center;
     padding:10px;
-    background:linear-gradient(rgb(237, 201, 201),rgb(135, 156, 181));
+    background-image: url("/white.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .card img{
+    padding: 5px;
     width:150px;
     height: 150px;
     border-radius: 70px;
@@ -57,7 +66,7 @@ body{
     height:30%;
     padding:8%;
     border-radius:20px;
-    background: linear-gradient(rgb(145, 191, 238),rgb(130, 138, 236));
+    background: linear-gradient(rgb(147, 148, 148),rgb(244, 244, 249));
 }
 
 .registration{
@@ -66,7 +75,7 @@ body{
     align-items: center;
     height:30%;
     padding: 10px;
-    background: linear-gradient(rgb(145, 191, 238),rgb(112, 118, 184));
+    background: linear-gradient(rgb(147, 148, 148),rgb(244, 244, 249));
 }
 
 .banner-section{
@@ -90,7 +99,9 @@ body{
     height:180px;
     width: 300px;
     text-align: center;
-    background: linear-gradient(rgb(223, 212, 212),rgb(247, 247, 247));
+    background-image: url("/white.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;;
 }
 a{
     text-decoration: none;
@@ -144,4 +155,7 @@ a{
  }
 .banner{
     margin-top: 80px;
+}
+.Click-btn{
+    width: 1260px;
 }

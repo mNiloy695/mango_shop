@@ -22,7 +22,7 @@ const handleMangoDetaile=()=>{
     Description: ${mango.discription}</br>
     Price: ${mango.price} per kg </br>
     Weight: ${mango.weight}</br>
-      <a class=" btn mt-2 px-5 btn-warning"  href="./single_mango_review.html?id=${mango.id}">Reviews</a>
+      <a class=" btn mt-2 px-5 btn-outline-warning"  href="./single_mango_review.html?id=${mango.id}">Reviews</a>
   </div>
   <li id="auth_check">
   </li>
@@ -38,7 +38,7 @@ const handleMangoDetaile=()=>{
       }
       else{
         auth.innerHTML=`
-        <a class="nav-link btn-lg m-2 text-dark  btn-info" href="./login.html">Login</a>`
+        <a class=" btn-lg btn m-2 text-dark  btn-outline-info  text-white" href="./login.html">Login</a>`
       }
     })
 

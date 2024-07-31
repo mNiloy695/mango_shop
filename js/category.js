@@ -6,7 +6,7 @@ const handleCategory=()=>{
         console.log(data)
         data.forEach((category)=>{
             const li=document.createElement('li')
-            li.innerHTML=`<a class="dropdown-item text-dark" onclick="handleMangoList(${category.id})">${category.name}</a>`;
+            li.innerHTML=`<a class="dropdown-item m-1  text-dark" onclick="handleMangoList(${category.id})">${category.name}</a>`;
             cat.append(li)
 
         });

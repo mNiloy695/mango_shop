@@ -10,12 +10,12 @@ fetch("navbar.html")
     if(token == undefined){
       
         nav_element.innerHTML+=`
-       
+
        <li class="nav-item">
-          <a class="nav-link btn m-2 btn-danger text-white" href="./registration.html">Register</a>
+          <a class="nav-link btn m-2 btn-outline-info text-white" href="./registration.html">Register</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link btn m-2 btn-success text-white" href="./login.html">Login</a>
+          <a class="nav-link btn m-2 btn-outline-success text-white" href="./login.html">Login</a>
         </li>
         `
     }
@@ -23,22 +23,21 @@ fetch("navbar.html")
     {
         nav_element.innerHTML+=`
   
-           <li class="nav-item">
+        <li class="nav-item">
         <a class="nav-link btn m-2 btn dasboard" href="./all_order_history.html">All Orders</a>
       </li>
        <li class="nav-item">
-            <a class="nav-link  btn m-2 btn-danger" onclick="handleLogout()">Logout</a>
+            <a class="nav-link  btn m-2 btn-outline-light" onclick="handleLogout()">Logout</a>
           </li>
-        `;
-      
+        `;  
     }
     else{
         nav_element.innerHTML+=`
          <li class="nav-item">
-          <a class="nav-link btn m-2 btn-success" href="./user_order_history.html?user_id=${user_id}">Order history</a>
+          <a class="nav-link btn m-2 btn-outline-success text-white" href="./user_order_history.html?user_id=${user_id}">Order history</a>
         </li>
           <li class="nav-item">
-            <a class="nav-link  btn m-2 btn-danger" onclick="handleLogout()">Logout</a>
+            <a class="nav-link  btn m-2 btn-outline-danger text-white" onclick="handleLogout()">Logout</a>
           </li>
         `
 

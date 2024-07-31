@@ -41,7 +41,7 @@ const bannerHandle=()=>{
        </p>
         </div>
        <div class="image-sec col-lg-6 col-md-6 col-sm-12">
-        <img  style='width: 100%;' src="./images/home.jpg" alt="">
+        <img  style='width: 100%; border-radius:10px' src="./images/home.jpg" alt="">
        </div>`;
   }
 }
