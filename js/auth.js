@@ -21,7 +21,7 @@ handleRegistration=(event)=>{
           
             console.log(registration)
             if(for_api_fetch(registration.username) == undefined){
-                fetch(`http://127.0.0.1:8000/user/registration/`,{
+                fetch(`https://mango-shop-project-2.onrender.com//user/registration/`,{
                     method:"POST",
                     headers:{"content-type":"application/json"},
                     body:JSON.stringify(registration),
@@ -63,7 +63,7 @@ handleRegistration=(event)=>{
 
 const for_api_fetch=(param)=>{
     username=param;
-    fetch(`http://127.0.0.1:8000/user/list/?username=${username}`)
+    fetch(`https://mango-shop-project-2.onrender.com//user/list/?username=${username}`)
     .then((res) => {
         if(res.ok){
             document.getElementById('error').innerHTML='The user Already exists';
