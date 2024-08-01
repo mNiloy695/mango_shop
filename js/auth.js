@@ -21,25 +21,33 @@ handleRegistration=(event)=>{
           
             console.log(registration)
             if(for_api_fetch(registration.username) == undefined){
-                fetch(`https://mango-shop-project-2.onrender.com//user/registration/`,{
+                fetch(`https://mango-shop-project-2.onrender.com/user/registration/`,{
                     method:"POST",
-                    headers:{"content-type":"application/json"},
+                    headers:{"Content-Type":"application/json"},
                     body:JSON.stringify(registration),
                 })
                 .then((res) => {
                     if(res.ok){
-                        res.json()
+                       return  res.json()
                         
                     }
                     else
                     {
-                        throw new Error("invalid information")
+                        return res.json().then((errorData) => {
+                            // Throw an error with the message from the API response
+                            throw new Error(errorData.error || 'Unknown error occurred');
+                        });
+                        
                     }
                 })
                 .then((data) => {
                     if(data){
                         alert('check you mail')
                     }
+                })
+                .catch((err)=>{
+                    
+                        document.getElementById('error').innerHTML=err.message;
                 })
             }
 
@@ -63,12 +71,16 @@ handleRegistration=(event)=>{
 
 const for_api_fetch=(param)=>{
     username=param;
-    fetch(`https://mango-shop-project-2.onrender.com//user/list/?username=${username}`)
+    fetch(`https://mango-shop-project-2.onrender.com/user/list/?username=${username}`)
     .then((res) => {
         if(res.ok){
             document.getElementById('error').innerHTML='The user Already exists';
             res.json()
         }
+        else{
+            return undefined;
+        }
+       
     })
     .then((data) =>{
         console.log(data);
