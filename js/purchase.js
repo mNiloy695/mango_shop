@@ -30,10 +30,16 @@ const Order=(event)=>{
                 order_status:"pending",
                 address:address.id,
             }
-            
+            const mango_id=parseInt(mango_id);
+            const quantity_mango=formData.get('InputQuantity');
+            const quantity_of_mango=single_mango_quantity(mango_id);
+            console.log(quantity_of_mango);
+            if(quantity_mango<2 && quantity_of_mango>quantity_mango){
+                alert(`minimum 2 kg and maximum ${quantity_of_mango} kg`);
+            }
+            else{
             console.log(JSON.stringify(puschase_form_data))
-            
-            fetch(`http://127.0.0.1:8000/mango/purchase/`,{
+            fetch(`https://mango-shop-project-2.onrender.com/mango/purchase/`,{
                 method:"POST",
                 headers: {
                     "Content-Type": "application/json", 
@@ -41,7 +47,8 @@ const Order=(event)=>{
                 },
                 body:JSON.stringify(puschase_form_data),
     
-            })
+            }
+            )
             .then((res) => {
                 if((!res.ok)){
                     console.log(res)
@@ -65,6 +72,7 @@ const Order=(event)=>{
                 alert(err)
                 console.log(err);
             })
+        }
             
         })
         .then((err)=>{
@@ -74,4 +82,19 @@ const Order=(event)=>{
     }
 
 
+}
+
+const single_mango_quantity=(id)=>{
+    fetch(`https://mango-shop-project-2.onrender.com/mango/list/${id}`)
+    .then((res) =>{
+        if(res.ok){
+            return res.json;
+        }
+        else{
+            throw Error("Not found the mango")
+        }
+    })
+    .then((mango)=>{
+        return mango.quantity;
+    })
 }
