@@ -41,7 +41,8 @@ const Order = async (event) => {
                     address: addressData.id,
                     price:quantityMango*mangoQuantity.price,
                 };
-
+                console.log( purchaseFormData)
+ 
                 const purchaseResponse = await fetch(`https://mango-shop-project-2.onrender.com/mango/purchase/`, {
                     method: "POST",
                     headers: {
@@ -69,7 +70,9 @@ const single_mango_quantity = async (id) => {
         const response = await fetch(`https://mango-shop-project-2.onrender.com/mango/list/${id}`);
         if (!response.ok) throw new Error("Not found the mango");
         const mango = await response.json();
-        return {"weight":mango.quantity,"price":mango.price};
+        console.log(mango)
+        return {"weight":mango.weight
+            ,"price":mango.price};
     } catch (error) {
         console.error(error);
         throw error;
