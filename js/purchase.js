@@ -29,16 +29,17 @@ const Order = async (event) => {
             const mangoQuantity = await single_mango_quantity(parseInt(mango_id));
             const quantityMango = parseInt(formData.get('InputQuantity'));
 
-            if (quantityMango < 1 || quantityMango >= mangoQuantity) {
+            if (quantityMango < 1 || quantityMango >= mangoQuantity.weight) {
                 alert(`Please Enter correct Weight of mango`);
             } else {
+                console.log(mangoQuantity.weight)
                 const purchaseFormData = {
                     user: parseInt(user_id),
                     quantity: quantityMango,
                     mango: parseInt(mango_id),
                     order_status: "pending",
                     address: addressData.id,
-                    price:quantityMango*mangoQuantity.weight,
+                    price:quantityMango*mangoQuantity.price,
                 };
 
                 const purchaseResponse = await fetch(`https://mango-shop-project-2.onrender.com/mango/purchase/`, {
