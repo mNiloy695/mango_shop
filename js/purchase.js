@@ -4,7 +4,7 @@ const Order = async (event) => {
     const token = localStorage.getItem('token');
     const user_id = localStorage.getItem('user_id');
     const mango_id = new URLSearchParams(window.location.search).get('mango_id');
-
+   
     if (token) {
         const formData = new FormData(form);
         const address = {
@@ -29,15 +29,16 @@ const Order = async (event) => {
             const mangoQuantity = await single_mango_quantity(parseInt(mango_id));
             const quantityMango = parseInt(formData.get('InputQuantity'));
 
-            if (quantityMango < 1 || quantityMango > mangoQuantity) {
+            if (quantityMango.weight < 1 || quantityMango.weight >= mangoQuantity) {
                 alert(`Please Enter correct Weight of mango`);
             } else {
                 const purchaseFormData = {
                     user: parseInt(user_id),
-                    quantity: quantityMango,
+                    quantity: quantityMango.weight,
                     mango: parseInt(mango_id),
                     order_status: "pending",
                     address: addressData.id,
+                    price:mangoQuantity*quantityMango.price,
                 };
 
                 const purchaseResponse = await fetch(`https://mango-shop-project-2.onrender.com/mango/purchase/`, {
@@ -46,7 +47,7 @@ const Order = async (event) => {
                         "Content-Type": "application/json",
                         'Authorization': `Token ${token}`,
                     },
-                    body: JSON.stringify(purchaseFormData),
+                    body: JSON.stringify(FormData),
                 });
 
                 if (!purchaseResponse.ok) throw new Error('Purchase request failed');
@@ -67,7 +68,7 @@ const single_mango_quantity = async (id) => {
         const response = await fetch(`https://mango-shop-project-2.onrender.com/mango/list/${id}`);
         if (!response.ok) throw new Error("Not found the mango");
         const mango = await response.json();
-        return mango.weight;
+        return mango;
     } catch (error) {
         console.error(error);
         throw error;

@@ -3,7 +3,7 @@ const handleUserOrderStatus=(id)=>{
     const info={order_status:"cancelled"}
     console.log(JSON.stringify(info))
     fetch(`https://mango-shop-project-2.onrender.com/mango/purchase/${id}/`,{
-       method:"PATCH",
+       method:"PUT",
        headers: {
         "Content-Type": "application/json", 
         'Authorization': `Token ${token}`,
