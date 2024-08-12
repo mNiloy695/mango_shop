@@ -13,12 +13,12 @@ const singleReviewHandle=()=>
     
                 const li=document.createElement('li');
                 li.innerHTML=`
-                    <div class="card border-0 p-5 h-100 ">
-                        <div class="ratio m-5 ratio-1x1 w-50 mx-auto">
-                            <img src="${mango.image}" class=" card-img-top" loading="lazy" alt="img">
+                    <div class="carde  shadow  h-100">
+                        <div class="ratio  mt-2 mb-4 p-5 ratio-1x1 text-center ">
+                            <img src="${mango.image}" class="img-fluid" loading="lazy" alt="img">
                         </div>
-                        <div class="card-body p-0 pt-2 text-center">
-                            <h6>Review: ${review.body}</h6>
+                        <div class="card-body  text-center">
+                            <h6>${review.body}</h6>
                             <h6>Reviewer: ${review.reviewer}</h6>
                             <h5> ${review.rating}</h5>
                         </div>

@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url("/white.jpg");
+    /* background-image: url("/white.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -15,15 +15,32 @@ html,body{
     height: 100%;
 }
 .card{
-    box-shadow:2px 2px 8px 2px;
+    box-shadow:1px 2px 2px 2px;
     align-items: center;
     border-radius: 20px;
     font-size: small;
-    background-image: url("/white.jpg");
+    /* background-image: url("/white.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
 
   }
+.carde{
+    box-shadow:1px 2px 2px 2px;
+    /* background-image: url("/white.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-color: rgb(131, 157, 157);
+    border-radius: 20px;
+    
+}
+.carde img{
+    margin-top:10px;
+    border-radius:50%;
+
+}
 .details-card
 {
     
@@ -59,21 +76,46 @@ html,body{
     /* gap: 10px; */
 
 }
-
-.login{
-    box-shadow:4px 4px 8px 8px;
-    align-items: center;
-    padding:3%;
-    border-radius:20px;
-    background: linear-gradient(rgb(147, 148, 148),rgb(244, 244, 249));
+.cards img{
+    border-radius:10px;
 }
 
+.login{
+    
+    align-items: center;
+    width: 100vh;
+    height: 80vh;
+    padding:3%;
+    border-radius:20px;
+    font-size:large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* background-color: rgb(203, 212, 212); */
+    
+}
+.form-control{
+    padding: 10px 25px;
+    /* border:hidden; */
+    border-radius: 10px;
+    font-size: large;
+    
+    
+}
+
+
 .registration{
-    box-shadow:4px 4px 8px 8px;
+     
+    /* background-color: rgb(203, 212, 212); */
+    padding: 50px;
+    width: 80%;
+    height: auto;
     border-radius:20px;
     align-items: center;
     padding: 10px;
-    background: linear-gradient(rgb(147, 148, 148),rgb(244, 244, 249));
+    font-size: large;
+    
+}
+.registration img{
+    border-radius: 20px;
 }
 
 .banner-section{
@@ -91,6 +133,7 @@ html,body{
 .review-box{
     width: 70%;
     margin: auto;
+    
 }
 
 .review{
@@ -109,7 +152,7 @@ a{
     width: 90%;
     margin: auto;
     margin-top: 50px;
-   justify-content: center;
+    justify-content: center;
     border-radius: 20px;
 }
 
@@ -142,7 +185,7 @@ a{
     background: linear-gradient(rgb(129, 129, 206),rgb(195, 195, 120),rgb(194, 123, 123));
 }
 .contact{
-    background: linear-gradient(rgb(134, 134, 147),gray);
+    background-color:  #f8f8f8;
 }
 /* main{
    height: 100vh;
@@ -159,3 +202,40 @@ a{
     width: 1250px;
 }
 
+.cards{
+    width: 80%;
+    height: auto;
+    /* background-color: rgb(203, 212, 212); */
+    align-items: center;
+    border-radius: 20px;
+    font-size: small;
+    /* background-image: url("/white.jpg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    font-size: large; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .ratio{
+    width: 40%;
+    margin: auto;
+  }
+  
+.box{
+    width: 120px;
+}
+.card-review{
+    box-shadow:1px 2px 2px 2px;
+    /* background-image: url("/white.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+.card-review img{
+    margin-top:10px;
+    border-radius:50%;
+}

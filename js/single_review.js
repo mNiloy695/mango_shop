@@ -14,8 +14,8 @@ const singleReviewHandle=()=>
             const li=document.createElement('li');
             li.innerHTML=`
                 <div class="card border-0 h-100 p-5">
-                    <div class="ratio ratio-1x1 w-50 mx-auto">
-                        <img src="${mango.image}" class="card-img-top " loading="lazy" alt="img">
+                    <div class="ratio ratio-1x1  ">
+                        <img src="${mango.image}" class="card-img-top image-fluid" loading="lazy" alt="img">
                     </div>
                     <div class="card-body p-0 pt-2 text-center">
                         <h6>Review: ${review.body}</h6>

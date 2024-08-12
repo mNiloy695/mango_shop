@@ -2,7 +2,8 @@
     width: 70%;
     box-shadow:4px 4px 8px 8px;
     align-items: center;
-    background-image: url("/bg_.jpg");
+    background-image: url("/bg_.jpg/");
+
     background-size: cover;
     color:white;
     background-repeat: no-repeat;
