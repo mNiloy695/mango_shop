@@ -19,18 +19,6 @@ fetch("navbar.html")
         </li>
         `
     }
-    else if(staff!="false")
-    {
-        nav_element.innerHTML+=`
-  
-        <li class="nav-item">
-        <a class="nav-link btn m-2 btn dasboard" href="./all_order_history.html">All Orders</a>
-      </li>
-       <li class="nav-item">
-            <a class="nav-link  btn m-2 btn-outline-light" onclick="handleLogout()">Logout</a>
-          </li>
-        `;  
-    }
     else{
         nav_element.innerHTML+=`
          <li class="nav-item">

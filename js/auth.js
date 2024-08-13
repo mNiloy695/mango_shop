@@ -122,7 +122,12 @@ const handleLogin=(event)=>{
         localStorage.setItem('token',data.token);
         localStorage.setItem('user_id',data.user_id)
         localStorage.setItem("is_staff",data.is_staff)
-        window.location.href="./index.html";
+        if(data.is_staff=="true"){
+            window.location.href="./admin_panel.html";
+        }
+        else{
+            window.location.href="./index.html";
+        }
         }
         else{
             const  id=document.getElementById('er')

@@ -1,7 +1,6 @@
 const all_order_table=()=>{
     const  tbody=document.getElementById('table-body');
     const token=localStorage.getItem('token')
-    const user_id=localStorage.getItem('user_id')
     fetch(`https://mango-shop-project-2.onrender.com/mango/purchase/`,{
         method:"GET",
         headers:{
@@ -24,14 +23,14 @@ const all_order_table=()=>{
         histories.forEach((history) =>{
             const tr=document.createElement('tr');
             tr.innerHTML=`
-            <td>${history.date}</td>
+            <td>${(history.date).slice(0,10)}</td>
             <td>${history.mango}</td>
             <td>${history.quantity}</td>
             <td>${history.order_status}</td>
             <td>${(history.price*history.quantity).toFixed(2)}</td>
             `;
             if(history.order_status=="pending"){
-                tr.innerHTML+=`<td class="btn-sm  mt-2 bg-danger text-center" onclick="handleUserOrderStatus(${history.id})">Cancel</td>`
+                tr.innerHTML+=`<td class="btn  mt-2 bg-danger text-center" onclick="handleUserOrderStatus(${history.id})">/td>`
             }
             else{
                 tr.innerHTML+=`<td class="bg-success text-center">${history.order_status}</td>`
@@ -44,4 +43,4 @@ const all_order_table=()=>{
         console.log(err)
     })
 }
-all_order_table()
+all_order_table();
