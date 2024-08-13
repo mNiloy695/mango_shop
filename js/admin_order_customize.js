@@ -29,12 +29,21 @@ const all_order_table=()=>{
             <td>${history.order_status}</td>
             <td>${(history.price*history.quantity).toFixed(2)}</td>
             `;
-            if(history.order_status=="pending"){
-                tr.innerHTML+=`<td class="btn  mt-2 bg-danger text-center" onclick="handleUserOrderStatus(${history.id})">/td>`
-            }
-            else{
-                tr.innerHTML+=`<td class="bg-success text-center">${history.order_status}</td>`
-            }
+                tr.innerHTML+=`<td class="text-center"> <div class="col-sm-10 d-flex">
+                            <select class="form-select" id="id_status" name="category">
+                                <!-- Options should be populated dynamically from your Django view -->
+                              <option value="pending">pending</option>
+                              <option value="cancelled">cancelled</option>
+                              <option value="running">running</option>
+                              <option value="completed">completed</option>
+                              
+                            </select>
+                            <button class="btn btn-warning"  type="submit" onclick="edit(${history.id})">Update</button>
+                            
+                        </div>
+                        </td>`
+       
+            
             tbody.append(tr);
             
         });
@@ -44,3 +53,35 @@ const all_order_table=()=>{
     })
 }
 all_order_table();
+
+const edit=(id)=>{
+ const ide=parseInt(id);
+ const token=localStorage.getItem('token')
+ const id_status=document.getElementById('id_status')
+ const selectValue=id_status.value
+ console.log(ide)
+ console.log(selectValue);
+ fetch(`https://mango-shop-project-2.onrender.com/mango/purchase/${ide}/`,{
+    method:"PUT",
+    headers:{
+        "Content-Type":"application/json",
+        "Authorization":`Token ${token}`,
+    },
+    body:JSON.stringify({order_status:selectValue}),
+ })
+ .then((res)=>{
+    if(res.ok){
+        return res.json();
+    }
+    else{
+        throw new Error("invalid response");
+    }
+ })
+ .then((mango)=>{
+    console.log(mango);
+    window.location.href='./all_order_history.html'
+ })
+ .catch((err)=>{
+    console.log(err);
+ })
+}
