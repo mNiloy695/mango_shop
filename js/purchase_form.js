@@ -54,3 +54,5 @@ else{
 }
 
 purchaseFormHadle()
+
+// document.getElementById('id_category).selected
