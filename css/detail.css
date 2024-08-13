@@ -2,10 +2,9 @@
     width: 70%;
     box-shadow:4px 4px 8px 8px;
     align-items: center;
-    background-image: url("/bg_.jpg/");
-
+    background-image: rgb(213, 137, 137);
     background-size: cover;
-    color:white;
+    color:#090909;
     background-repeat: no-repeat;
     font-size: bold;
   } 
