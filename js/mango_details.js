@@ -16,7 +16,7 @@ const handleMangoDetaile=()=>{
         console.log(mango)
         mango_details.innerHTML=`
       <div class="card details-card mx-auto mt-5" style="width:70%">
-  <img src="${mango.image}" class="card-img-top" alt="...">
+  <img src="${mango.image}" class="card-img-top" alt="Mango image">
   <div class="card-body">
  
     Description: ${mango.discription}</br>
@@ -38,7 +38,7 @@ const handleMangoDetaile=()=>{
       }
       else{
         auth.innerHTML=`
-        <a class=" btn-lg btn m-2 text-dark  btn-outline-info  text-white" href="./login.html">Login</a>`
+        <a class=" btn-lg px-5 btn m-5 text-dark  btn-outline-info  text-dark" href="./login.html">Login</a>`
       }
     })
 

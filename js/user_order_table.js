@@ -31,10 +31,13 @@ const order_table=()=>{
             <td>${(history.price*history.quantity).toFixed(2)}</td>
             `;
             if(history.order_status=="pending"){
-                tr.innerHTML+=`<td class="btn-sm  mt-2 bg-danger text-center" onclick="handleUserOrderStatus(${history.id})">Cancel</td>`
+                tr.innerHTML+=`<td class="btn-lg  mt-2 bg-danger text-center" onclick="handleUserOrderStatus(${history.id})">Cancel</td>`
             }
             else{
                 tr.innerHTML+=`<td class="bg-success text-center">${history.order_status}</td>`
+                if(history.order_status=="completed"){
+                    tr.innerHTML+=`<td class="bg-warning  text-center"><a btn text-white href="./review_form.html?mango_id=${history.mango}">review</a></td>`
+                }
             }
             tbody.append(tr);
             
