@@ -25,24 +25,31 @@ const handleMangoListForPagination=(page_no)=>{
       
         console.log(data)
         data.results.forEach((mango)=>
-        {
-        const div=document.createElement('div')
-        
-        div.innerHTML=`
-        <div class="card g-2 mt-2 col-sm" style="width:18rem; ">
-        <img src="${mango.image}" class="card-img-top img "  alt="...">
-        <div class="card-body">
-          <h6 class="card-title">${mango.title}</h6>
-          <p class="card-text">Description: ${mango.discription.slice(0,20)}</br>
-          price: ${mango.price} tk per kg </br>
-           Quantity: ${mango.weight} kg </br>
-          </p>
-          <a href="./mango_details.html?id=${mango.id}" class="btn-sm btn-danger">Details</a>
-        </div>
-        </div>
-        `;
-        mango_container.append(div)
-        })
+          {
+            fetch('https://api.imgbb.com/1/upload?key=70a11ac23df408c22afeb6a78e1439f0')
+            .then((response)=>{
+              return response.json();
+            })
+            .then((img)=>{
+              console.log(img.data)
+              const div=document.createElement('div')
+          
+          div.innerHTML=`
+          <div class="card g-2 mt-2 col-sm" style="width:18rem; ">
+          <img src="${mango.image}" class="card-img-top img "  alt="...">
+          <div class="card-body">
+            <h6 class="card-title">${mango.title}</h6>
+            <p class="card-text">Description: ${mango.discription.slice(0,20)}</br>
+            price: ${mango.price} tk per kg </br>
+             Quantity: ${mango.weight} kg </br>
+            </p>
+            <a href="./mango_details.html?id=${mango.id}" class="btn-sm btn-danger">Details</a>
+          </div>
+          </div>
+          `;
+          mango_container.append(div)
+            })
+          })
        
         
     })
