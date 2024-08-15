@@ -25,9 +25,30 @@ const addMango = (event) => {
         }
     })
     .then((mango) => {
-        alert("Successfully added");
-        console.log(mango);
-        window.location.href = './add_mango_form.html';
+        const form_data=new FormData();
+        form_data.append('image',mango.image);
+        console.log(mango.image)
+        fetch('https://api.imgbb.com/1/upload?key=70a11ac23df408c22afeb6a78e1439f0',
+            {
+                method:"POST",
+                body:form_data,
+            }
+        )
+        .then((res)=>{
+            if(res.ok){
+                return res.json();
+            }
+        })
+        .then((data)=>{
+            console.log("img",data.data)
+            alert("Successfully added");
+            console.log(mango);
+            window.location.href = './add_mango_form.html';
+        })
+        .catch((err)=>{
+            console.log(err);
+        })
+      
     })
     .catch((err) => {
         console.log(err);

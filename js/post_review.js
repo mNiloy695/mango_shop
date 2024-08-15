@@ -31,5 +31,6 @@ const review=(event)=>{
     })
     .then((data)=>{
         console.log(data);
+        window.location.href=`./user_order_history.html?user_id=${localStorage.getItem('user_id')}`
     })
 }
