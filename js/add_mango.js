@@ -48,8 +48,8 @@ const addMango = async (event) => {
 
         const mango = await mangoResponse.json();
         console.log(mango)
-        // alert('Successfully added');
-        // window.location.href = './add_mango_form.html';
+        alert('Successfully added');
+        window.location.href = './add_mango_form.html';
 
     } catch (err) {
         console.error(err);
