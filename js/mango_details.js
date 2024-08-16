@@ -22,7 +22,7 @@ const handleMangoDetaile=()=>{
     Description: ${mango.discription}</br>
     Price: ${mango.price} per kg </br>
     Weight: ${mango.weight}</br>
-      <a class=" btn mt-2 px-5 btn-outline-warning"  href="./single_mango_review.html?id=${mango.id}">Reviews</a>
+      <a class=" btn mt-2 px-5 btn-dark text-white"  href="./single_mango_review.html?id=${mango.id}">Reviews</a>
   </div>
   <li id="auth_check">
   </li>
