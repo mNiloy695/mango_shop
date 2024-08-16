@@ -38,7 +38,7 @@ const addMango = async (event) => {
             method: 'POST',
             headers: {
                 'Authorization': `Token ${token}`
-            },
+                    },
             body: formData
         });
 

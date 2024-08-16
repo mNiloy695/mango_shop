@@ -78,6 +78,7 @@ const edit=(id)=>{
     }
  })
  .then((mango)=>{
+    alert("updated")
     console.log(mango);
     window.location.href='./all_order_history.html'
  })
