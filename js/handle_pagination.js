@@ -4,7 +4,7 @@ const handleMangoListForPagination=(page_no)=>{
     fetch(`https://mango-shop-project-2.onrender.com/mango/list/?page=${page_no?page_no:""}`)
     .then((res) => res.json())
     .then((data)=>{
-      let c=data.count/12;
+      let c=data.count/15;
       const c_int =parseInt(c)
       console.log(c_int)
       const d=c-c_int
@@ -26,16 +26,10 @@ const handleMangoListForPagination=(page_no)=>{
         console.log(data)
         data.results.forEach((mango)=>
           {
-            fetch('https://api.imgbb.com/1/upload?key=70a11ac23df408c22afeb6a78e1439f0')
-            .then((response)=>{
-              return response.json();
-            })
-            .then((img)=>{
-              console.log(img.data)
-              const div=document.createElement('div')
+          const div=document.createElement('div')
           
           div.innerHTML=`
-          <div class="card g-2 mt-2 col-sm" style="width:18rem; ">
+          <div class="card g-2 mt-2 col-sm" style="width:14rem; ">
           <img src="${mango.image}" class="card-img-top img "  alt="...">
           <div class="card-body">
             <h6 class="card-title">${mango.title}</h6>
@@ -43,12 +37,12 @@ const handleMangoListForPagination=(page_no)=>{
             price: ${mango.price} tk per kg </br>
              Quantity: ${mango.weight} kg </br>
             </p>
-            <a href="./mango_details.html?id=${mango.id}" class="btn-sm btn-danger">Details</a>
+            <a href="./mango_details.html?id=${mango.id}" class="btn-sm btn-success">Details</a>
           </div>
           </div>
           `;
           mango_container.append(div)
-            })
+            
           })
        
         

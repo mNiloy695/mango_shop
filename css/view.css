@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.n{
+    
+    box-shadow: 2px 2px 14px 1px;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+}
+.logo-menu{
+    width:1000px;
+    margin: auto;
+    
+}
+.menu ul,.authentication ul{
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    display: flex;
+    justify-content:center;
+    /* gap:15px; */
+    flex-wrap: wrap;
+    font-size: 20px;
+    justify-content: center;
+    gap: 30px;
+}
+.menu ul li a,.authentication ul li a{
+    text-decoration: none;
+    color: black;  
+}
+.menu ul li:hover{
+    padding-left:15px;
+    padding-right:15px;
+    border-radius:20px;
+    text-decoration: none;
+    background-color: darkgrey; 
+
+}
+.authentication ul li:hover{
+    background-color: gainsboro;
+    border: 20px;
+}
+.icons-text{
+    box-shadow: none;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    /* box-shadow: none; */
+}
+.tranding-products{
+    width: 90vw;
+    margin: auto;
+    background-color:#ffffff;;
+    box-sizing: border-box;
+    box-shadow:none;
+    border-radius: 40px;
+}
+#mango-containers{
+    justify-content:center;
+    gap: 5px;
+    margin: 10px;
+    
+}
+.card{
+    box-shadow:none;
+    align-items: center;
+    border-radius: 20px;
+    font-size: small;
+    /* background-image: url("/white.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+.card img{
+    padding: 5px;
+    width:150px;
+    height: 150px;
+    border-radius: 70px;
+   
+}
+.card a{
+    text-decoration: none;
+}
+.c{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-lists{
+    width: 95vw;
+    margin: auto;
+}
+
+.discount-box{
+    /* width: 1200px; */
+    width: 95vw;
+    margin: auto;
+    background-color:#f2f8dd;
+    font-size:20px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 40px;
+    box-sizing: border-box;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.discount-box h1{
+     color: rgb(46, 224, 22);
+}
+.discount-box img{
+     width: 60%;
+}
+.category{
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#mango-container{
+    width: 95vw;
+    background-color:#ffffff;
+    box-shadow:none;
+    margin: auto;
+    border-radius:30px;
+
+}
+#footers{
+    width: 100vw;
+    margin: auto;
+}
+.icon{
+    width: 90vw;
+    margin: auto;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+    padding: 20px;
+    margin-top: 10px;
+    
+    border-radius: 20px;
+    color: rgb(163, 195, 113);
+}
+.icon i{
+    font-size: 50px;
+    background-color: #ffffff;
+    padding: 20px;
+    
+}

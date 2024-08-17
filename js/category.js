@@ -33,5 +33,28 @@ const categoryOption=()=>{
     })
 
 }
+
+const category=()=>{
+    const cat=document.getElementById("category");
+    fetch(`https://mango-shop-project-2.onrender.com/mango/categories/`)
+    .then((res) => {
+        return res.json()
+})
+    .then((data) =>{
+        console.log(data)
+        data.forEach((category)=>{
+            const a=document.createElement('a')
+            a.classList.add('btn', 'btn-dark')
+            a.innerHTML=`${category.name}`
+            a.addEventListener('click', (event) => {
+                event.preventDefault(); // Prevent default action of the link
+                handleMangoList(category.id); // Call your function with the category id
+            });
+            cat.append(a)
+        });
+    })
+
+}
+category()
 handleCategory()
 categoryOption()
