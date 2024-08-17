@@ -100,7 +100,7 @@
     /* width: 1200px; */
     width: 95vw;
     margin: auto;
-    background-color:#f2f8dd;
+    background-color:#e99880;
     font-size:20px;
     display: flex;
     flex-wrap: wrap;
@@ -111,7 +111,7 @@
     font-style: normal;
 }
 .discount-box h1{
-     color: rgb(46, 224, 22);
+     color: rgb(60, 60, 64);
 }
 .discount-box img{
      width: 60%;
