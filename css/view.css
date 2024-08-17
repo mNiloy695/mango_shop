@@ -36,19 +36,24 @@
     border-radius:20px;
     text-decoration: none;
     background-color: darkgrey; 
-
 }
 .authentication ul li:hover{
     background-color: gainsboro;
     border: 20px;
 }
 .icons-text{
+    height: 60vh;
     box-shadow: none;
     border-radius: 20px;
     padding-left: 15px;
     padding-right: 15px;
     border: none;
     /* box-shadow: none; */
+}
+.icons-text img
+{
+    margin-top: 20px;
+    height: 350px;
 }
 .tranding-products{
     width: 90vw;
@@ -118,10 +123,10 @@
 }
 .category{
     width: 90vw;
-    margin: auto;
+     margin: auto; 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 10px;
 }

@@ -44,7 +44,7 @@ const category=()=>{
         console.log(data)
         data.forEach((category)=>{
             const a=document.createElement('a')
-            a.classList.add('btn', 'btn-dark')
+            a.classList.add('btn', 'btn-outline-white')
             a.innerHTML=`${category.name}`
             a.addEventListener('click', (event) => {
                 event.preventDefault(); // Prevent default action of the link

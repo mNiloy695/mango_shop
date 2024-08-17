@@ -15,17 +15,21 @@ const handleMangoDetaile=()=>{
     {
         console.log(mango)
         mango_details.innerHTML=`
-      <div class="card details-card mx-auto mt-5" style="width:70%">
-  <img src="${mango.image}" class="card-img-top" alt="Mango image">
-  <div class="card-body">
+  <div class="row details shadow-lg  mx-auto mt-2" style="width:80%">
+  <div class="image col-lg-4 col-md-6 col-sm-12">
+  <img src="${mango.image}" class="img-fluid w-100" alt="Mango image">
+  </div>
+  <div class="card-body col-lg-8 col-md-6 col-sm-12">
  
     Description: ${mango.discription}</br>
     Price: ${mango.price} per kg </br>
     Weight: ${mango.weight}</br>
       <a class=" btn mt-2 px-5 btn-dark text-white"  href="./single_mango_review.html?id=${mango.id}">Reviews</a>
-  </div>
-  <li id="auth_check">
+       <li style="list-style:none" class="mt-3" id="auth_check">
   </li>
+  </div>
+ 
+  
   
 </div>
         `;

@@ -9,7 +9,7 @@ const handleMangoList=(cat_id)=>{
         {
           const div=document.createElement('div')
           div.innerHTML=`
-          <div class="card  mt-2 col-sm" style="width:16rem; ">
+          <div class="card  mt-2 col-sm" style="width:18rem; ">
           <img src="${mango.image}" class="card-img-top img "  alt="...">
           <div class="card-body">
             <h6 class="card-title">${mango.title}</h6>

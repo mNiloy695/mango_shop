@@ -4,7 +4,7 @@ const handleMangoListForPagination=(page_no)=>{
     fetch(`https://mango-shop-project-2.onrender.com/mango/list/?page=${page_no?page_no:""}`)
     .then((res) => res.json())
     .then((data)=>{
-      let c=data.count/15;
+      let c=data.count/16;
       const c_int =parseInt(c)
       console.log(c_int)
       const d=c-c_int
@@ -29,7 +29,7 @@ const handleMangoListForPagination=(page_no)=>{
           const div=document.createElement('div')
           
           div.innerHTML=`
-          <div class="card g-2 mt-2 col-sm" style="width:14rem; ">
+          <div class="card g-2 m-3 col-sm" style="width:16rem; ">
           <img src="${mango.image}" class="card-img-top img "  alt="...">
           <div class="card-body">
             <h6 class="card-title">${mango.title}</h6>

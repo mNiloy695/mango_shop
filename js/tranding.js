@@ -7,12 +7,12 @@ const tranding=()=>{
         let a=0;
         mango_container=document.getElementById('mango-containers')
         mangoes.results.forEach((mango)=>{
-            if(a<5){
+            if(a<4){
                 a+=1;
                 const div=document.createElement('div')
                 div.classList.add('c')
                 div.innerHTML=`
-                <div class="card  g-2 mt-2" style="width:14rem; ">
+                <div class="card m-3" style="width:16rem; ">
                 <img src="${mango.image}" class="card-img-top img "  alt="...">
                 <div class="card-body">
                   <h6 class="card-title">${mango.title}</h6>
