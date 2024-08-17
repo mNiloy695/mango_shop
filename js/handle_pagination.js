@@ -5,6 +5,7 @@ const handleMangoListForPagination=(page_no)=>{
     .then((res) => res.json())
     .then((data)=>{
       let c=data.count/16;
+      console.log(c)
       const c_int =parseInt(c)
       console.log(c_int)
       const d=c-c_int
