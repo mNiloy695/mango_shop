@@ -65,11 +65,11 @@ html,body{
     border-radius: 70px;
    
 }
-#mango-container{
+.mango-container{
     justify-content:center;
     gap: 10px;
     margin: 5px;
-    background-color: #ffff;
+   
     
 }
 
@@ -167,12 +167,9 @@ a:hover{
 .address_form
 {
     align-items: center;
-    box-shadow:4px 4px 8px 8px;
-    
     padding:3%;
     margin: auto;
     border-radius:20px;
-    background: linear-gradient(rgb(145, 127, 120),rgb(203, 102, 119));
     color: black;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -211,7 +208,7 @@ a:hover{
 }
 
 .cards{
-    width: 80%;
+    width: 100vw;
     height: auto;
     /* background-color: rgb(203, 212, 212); */
     align-items: center;

@@ -3,10 +3,10 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+
 .n{
     
     box-shadow: 2px 2px 14px 1px;
-    padding: 30px;
     font-family: 'Poppins', sans-serif;
     background-color: #ffffff;
 }
@@ -23,23 +23,27 @@
     /* gap:15px; */
     flex-wrap: wrap;
     font-size: 20px;
-    justify-content: center;
-    gap: 30px;
+    align-items: center;
+    /* gap: 0px; */
+}
+.menu ul li,.authentication ul li{
+    padding-left:15px;
+    padding-right:15px;
+    border-radius:20px;
+    
 }
 .menu ul li a,.authentication ul li a{
     text-decoration: none;
     color: black;  
 }
 .menu ul li:hover{
-    padding-left:15px;
-    padding-right:15px;
-    border-radius:20px;
     text-decoration: none;
-    background-color: darkgrey; 
+    background-color: rgb(200, 192, 192); 
 }
 .authentication ul li:hover{
-    background-color: gainsboro;
-    border: 20px;
+   
+    background-color: darkgrey;
+    
 }
 .icons-text{
     
@@ -63,7 +67,7 @@
     box-shadow:none;
     border-radius: 40px;
 }
-#mango-containers{
+.mango-containers{
     justify-content:center;
     gap: 5px;
     margin: 10px;
@@ -105,7 +109,7 @@
     /* width: 1200px; */
     width: 95vw;
     margin: auto;
-    background-color:#e99880;
+    background-color:#fcffec;
     font-size:20px;
     display: flex;
     flex-wrap: wrap;
@@ -118,9 +122,7 @@
 .discount-box h1{
      color: rgb(60, 60, 64);
 }
-.discount-box img{
-     width: 60%;
-}
+
 .category{
     width: 90vw;
      margin: auto; 
@@ -130,7 +132,7 @@
     align-items: center;
     gap: 10px;
 }
-#mango-container{
+.mango-container{
     width: 95vw;
     background-color:#ffffff;
     box-shadow:none;
@@ -143,7 +145,7 @@
     margin: auto;
 }
 .icon{
-    width: 80vw;
+    width: 95vw;
     margin: auto;
     background-color: #ffffff;
     display: flex;
@@ -151,9 +153,8 @@
     align-items: center;
     flex-wrap:wrap;
     padding: 20px;
-    margin-top: 10px;
-    
-    border-radius: 20px;
+    margin-top: 20px; 
+    border-radius: 50px;
     color: rgb(163, 195, 113);
 }
 .icon i{
@@ -161,4 +162,44 @@
     background-color: #ffffff;
     padding: 20px;
     
+}
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.category a{
+    font-size: large;
+}
+.category a:hover{
+    color: green;
+    
+}
+.profile-container{
+    width: 90vw;
+    margin: auto;
+}
+.user-del{
+    width: 90vw;
+    margin: auto;
+    height:auto;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    
+
+}
+.div{
+
+    width:250px;
+    height:250px;
+    border-radius: 20px;
+    background-color:#008000;
+    font-size:30px;
+    font-family: fantasy;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    color: white;
 }

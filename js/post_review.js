@@ -1,6 +1,5 @@
 const review=(event)=>{
     event.preventDefault();
-    alert("yes")
     const mango_id=new URLSearchParams(window.location.search).get('mango_id')
     const token=localStorage.getItem('token')
     const form=document.getElementById('form')
@@ -16,6 +15,7 @@ const review=(event)=>{
 
     }
     console.log(JSON.stringify(info))
+   if(token!=undefined){
     fetch(`https://mango-shop-project-2.onrender.com/mango/review/?$mango_id=${mango_id}`,{
         method:'POST',
         headers:{
@@ -33,4 +33,9 @@ const review=(event)=>{
         console.log(data);
         window.location.href=`./user_order_history.html?user_id=${localStorage.getItem('user_id')}`
     })
+   }
+   else{
+    alert('You need to login first')
+   }
+
 }

@@ -13,8 +13,8 @@ const singleReviewHandle=()=>
     
                 const li=document.createElement('li');
                 li.innerHTML=`
-                    <div class="carde  shadow  h-100">
-                        <div class="ratio  mt-2 mb-4 p-5 ratio-1x1 text-center ">
+                    <div class="carde mb-5 mt-5  shadow  h-100">
+                        <div class="ratio  mt-2 mb-5 mt-5 p-5 ratio-1x1 text-center ">
                             <img src="${mango.image}" class="img-fluid" loading="lazy" alt="img">
                         </div>
                         <div class="card-body  text-center">

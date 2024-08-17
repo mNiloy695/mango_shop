@@ -16,8 +16,8 @@ const carouselHandle=()=>{
                 const li=document.createElement('li');
                 li.classList.add('slide-visible')
                 li.innerHTML=`
-               <div class="card-review shadow h-100">
-                      <div class="ratio ratio-1x1 ">
+               <div class="card-review  shadow-sm h-100">
+                      <div class="ratio ratio-1x1">
                           <img src="${mango.image}" class="card-img-top img-fluid"  alt="...">
                       </div>
                       <div class="card-body  pt-3 ">

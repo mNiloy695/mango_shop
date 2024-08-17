@@ -13,7 +13,7 @@ const tranding=()=>{
                 div.classList.add('c')
                 div.innerHTML=`
                 <div class="card m-3" style="width:16rem; ">
-                <img src="${mango.image}" class="card-img-top img "  alt="...">
+                <img src="${mango.image}" class="card-img-top img-fluid mt-5"  alt="...">
                 <div class="card-body">
                   <h6 class="card-title">${mango.title}</h6>
                   <p class="card-text">Description: ${mango.discription.slice(0,20)}</br>

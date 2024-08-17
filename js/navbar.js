@@ -10,15 +10,14 @@ fetch("navbar.html")
     if(token == undefined){
       
         nav_element.innerHTML+=`
-
-       <li><a href="./registration.html">Sign Up</a></li>
-        <li><a href="./login.html">Login</a></li>
+       <li class="col-md-6 col-sm-12"><a href="./registration.html">SignUp</a></li>
+        <li class="col-md-6 col-sm-12"><a href="./login.html">Login</a></li>
         `
     }
     else{
         nav_element.innerHTML+=`
-        <li><a href="./user_order_history.html?user_id=${user_id}">Profile</a></li>
-        <li><a href="#" onclick="handleLogout()">Logout</a></li>
+        <li class="col-md-6 col-sm-12"><a href="./user_order_history.html?user_id=${user_id}">Profile</a></li>
+        <li class="col-md-6 col-sm-12"><a href="#" onclick="handleLogout()">Logout</a></li>
          
         `
 
