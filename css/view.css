@@ -138,11 +138,11 @@
     margin: auto;
 }
 .icon{
-    width: 90vw;
+    width: 80vw;
     margin: auto;
     background-color: #ffffff;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap:wrap;
     padding: 20px;
