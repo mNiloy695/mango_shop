@@ -56,5 +56,5 @@ const category=()=>{
 
 }
 category()
-handleCategory()
+// handleCategory()
 categoryOption()
