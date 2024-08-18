@@ -9,8 +9,8 @@ const handleMangoList=(cat_id)=>{
         {
           const div=document.createElement('div')
           div.innerHTML=`
-          <div class="card  mt-2 col-sm" style="width:18rem; ">
-          <img src="${mango.image}" class="card-img-top img "  alt="...">
+          <div class="card  m-3 pb-4 col-sm" style="width:16rem; ">
+          <img src="${mango.image}" class="card-img-top img-fluid mt-5"  alt="...">
           <div class="card-body">
             <h6 class="card-title">${mango.title}</h6>
             <p class="card-text">Description: ${mango.discription.slice(0,20)}</br>
