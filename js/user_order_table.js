@@ -37,7 +37,7 @@ const order_table = async () => {
             const tr = document.createElement('tr');
             tr.innerHTML = `
                 <td>${(history.date).slice(0, 10)}</td>
-                <td><a class="btn-sm" href="./mango_details.html?mango_id=${history.mango}">${category}</a></td>
+                <td><a class="btn-sm" href="./mango_details.html?id=${history.mango}">${category}</a></td>
                 <td>${history.quantity}</td>
                 <td>${history.order_status}</td>
                 <td>${(history.price * history.quantity).toFixed(2)}</td>
