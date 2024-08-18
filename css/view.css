@@ -163,10 +163,9 @@
     padding: 20px;
     
 }
-.nav-bar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.navbar{
+    font-size: large;
+    font-family: fantasy;
 }
 .category a{
     font-size: large;
