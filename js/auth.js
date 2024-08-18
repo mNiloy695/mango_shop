@@ -95,7 +95,6 @@ const handleLogin=(event)=>{
     const form=document.getElementById('loginForm');
 
     const formData=new FormData(form)
-    alert('login')
     const login_info={
         username:formData.get('username'),
         password:formData.get('password'),
@@ -127,7 +126,7 @@ const handleLogin=(event)=>{
             window.location.href="./admin_panel.html";
         }
         else{
-            window.location.href="./index.html";
+            window.location.href="./visite_page.html";
         }
         }
         else{
