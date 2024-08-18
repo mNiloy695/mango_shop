@@ -1,13 +1,4 @@
- .card{
-    width: 70%;
-    align-items: center;
-    background-image: rgb(240, 237, 237);
-    background-size: cover;
-    color:#090909;
-    background-repeat: no-repeat;
-    font-size: bold;
-    
-  } 
+
 #mango-details{
   display: flex;
   flex-wrap: wrap;
@@ -16,9 +7,15 @@
 {
 
  padding: 20px;
- font-size: large;
  line-height:30px;
  border-radius: 30px;
+ background-color: #ffff;
+ font-size: 18px;
+ line-height: 32px;
+ color: var(--single-pro-text-color);
+ font-weight: 400;
+ letter-spacing: 0.5px;
+ font-family: popp;
 }
 .details img{
   margin-top: 10px;

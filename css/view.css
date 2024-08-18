@@ -133,11 +133,12 @@
     gap: 10px;
 }
 .mango-container{
-    width: 95vw;
+    width: 90vw;
     background-color:#ffffff;
     box-shadow:none;
     margin: auto;
     border-radius:30px;
+    
 
 }
 #footers{
@@ -158,7 +159,7 @@
     color: rgb(163, 195, 113);
 }
 .icon i{
-    font-size: 50px;
+    font-size: 40px;
     background-color: #ffffff;
     padding: 20px;
     
@@ -188,12 +189,18 @@
     
 
 }
+.user-del{
+    width: 95vw;
+    background-color:#008000;
+    margin-top: 20px;
+    border-radius:10px;
+}
 .div{
 
     width:250px;
     height:250px;
     border-radius: 20px;
-    background-color:#008000;
+    /* background-color:#008000; */
     font-size:30px;
     font-family: fantasy;
     display: flex;
@@ -202,3 +209,14 @@
     margin-top: 15px;
     color: white;
 }
+
+.about{
+    width: 95vw;
+    /* border-radius: 30px; */
+    padding: 10px;
+    background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight:400;
+    border-radius: 10px;
+}
+
