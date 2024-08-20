@@ -10,21 +10,27 @@ const singleReviewHandle=()=>
           .then((res) => res.json())
           .then((mango)=>{
             console.log(mango)
-
+            const ul=document.getElementById('slide-ul')
             const li=document.createElement('li');
+            li.classList.add('slide-visible')
             li.innerHTML=`
-                <div class="card mb-5 border-0 h-100 p-3">
-                    <div class="ratio ratio-1x1 mb-5">
-                        <img src="${mango.image}" class="card-img-top image-fluid" loading="lazy" alt="img">
-                    </div>
-                    <div class="card-body p-0 pt-2 text-center">
-                        <h6>Review: ${review.body}</h6>
-                        <h6>Reviewer: ${review.reviewer}</h6>
-                        <h5> ${review.rating}</h5>
-                    </div>
-                </div>
-            `;
-            ul.append(li);
+           <div class="card-review  shadow-sm h-100">
+                  <div class="ratio ratio-1x1">
+                      <img src="${mango.image}" class="card-img-top img-fluid"  alt="...">
+                  </div>
+                  <div class="card-body  pt-3 ">
+                       
+                      <h6 class="card-title text-center">
+                      mango: ${mango.title}
+                     </h6>
+                     <p class="card-text text-center"> Reviewer: ${review.reviewer}</p>
+                      <p class="card-text text-center">${review.body} </br>
+                      ${review.rating}</p>
+    
+                      </div>
+                  </div>
+              </div>`
+             ul.append(li);
           })
         })
     })

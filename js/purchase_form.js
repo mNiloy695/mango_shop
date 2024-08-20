@@ -14,16 +14,17 @@ const  purchaseFormHadle=()=>{
         id.innerHTML=`
       
         <div class="row">
-         <div class="t text-start  d-flex justify-content-center align-items-center col-lg-6 col-md-6 col-sm-12">
+         <div class="t  d-flex justify-content-between align-items-center col-lg-6 col-md-6 col-sm-12">
             <div>
-                  <p>Name:&nbsp ${mango.title} </p>
-                  <p>Price &nbsp ${mango.price} $</p>
+                  <h3 class="fs-3 fw-bold">${mango.title} </h3>
+                  <p class="fs-5">Price:&nbsp${mango.price} $</p>
             </div>
          </div>
-         <div  class="text-center mb-3 col-lg-6 col-md-6 col-sm-12">
-             <img style="border-radius:50%" src="${mango.image}" class="w-50" alt="">
-         </div></div>
-       <h4 class="text-center">Order Now</h4>
+         <div  class="text-lg-end text-md-end text-center mb-2  col-lg-6 col-md-6 col-sm-12">
+             <img  src="${mango.image}" class="w-50 pe-1" alt="">
+         </div>
+        </div>
+       <h5 class="text-center">Order Now</h5>
        <form class='p-2' onsubmit="Order(event)" id="purchase-form">
          
            <div class="mb-3">

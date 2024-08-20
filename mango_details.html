@@ -25,11 +25,11 @@
     <div class="g-2  mt-2 mx-auto" id="mango-details" >
       
       </div>
-
-      <div class='mx-auto row cards login mb-2 w-50'>  
+        
+      <div class='mx-auto  row cards login mb-2 w-100'>  
         <form id="form" onsubmit="review(event)">
-          <p class="text-center text-danger pt-3 pb-3" id="er"></p>
-          <h4 class="text-center">Review</h4>
+          <p class="text-center text-danger" id="er"></p>
+          <h4 class="text-center">Give Review</h4>
           <div class="mb-3" style="font-size:20px">
               <i class="fa-solid fa-message" ></i>
               <label for="body" class="form-label">Comment</label>
@@ -49,17 +49,10 @@
       </form>
       </div>
 
-      <h2 class="text-center mt-3">Customer Review's</h2>
-    
-    <div class="swiffy-slider  slider-item-show3 slider-nav-round slider-nav-page  single-mango-review-list">
-        <ul class="slider-container" id="ul">
-           
-      
-        </ul>
-    
-        <button type="button" class="slider-nav" aria-label="Go left"></button>
-        <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
-    </div>
+       
+    <div class="review-box text-center" id="review-box">
+     
+     </div>
       <footer class="text-center mt-5 text-lg-start bg-body-tertiary bg-dark text-white text-bold">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between  p-4 border-bottom">
@@ -163,6 +156,7 @@
         </div>
         <!-- Copyright -->
       </footer >
+      <script src="./js/review_box.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
       <script src="./js/single_review.js"></script>
       <script src="./js/post_review.js"></script>

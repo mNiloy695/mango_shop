@@ -15,9 +15,9 @@ const handleMangoDetaile=()=>{
     {
         console.log(mango)
         mango_details.innerHTML=`
-  <div class="row d-flex justify-content-center align-items-center details shadow-sm  mx-auto mt-2" style="width:80%">
-  <div class="image col-lg-4 col-md-6 col-sm-12">
-  <img src="${mango.image}" class="img-fluid" style="width:90%" alt="Mango image">
+  <div class="row d-flex justify-content-center align-items-center details shadow-sm  mx-auto" style="width:95%">
+  <div class="image text-center col-lg-4 col-md-6 col-sm-12">
+  <img src="${mango.image}" class="img-fluid " style="width:90%" alt="Mango image">
   </div>
   <div class="card-body lh-3 col-lg-8 col-md-6 col-sm-12">
     <small class="fs-3">Description:</small> <br> ${mango.discription}</br>
