@@ -21,7 +21,7 @@ const handleMangoListForPagination=(page_no)=>{
       for(let i=0;i<c;i++){
       const pag=document.getElementById("pag")
       pag.innerHTML+=`
-       <li class="page-item"><a class="page-link" onclick="handleMangoListForPagination(${i+1})">${i}</a></li>`;
+       <li class="page-item"><a class="page-link" onclick="handleMangoListForPagination(${i+1})">${i+1}</a></li>`;
       }
       
         console.log(data)
