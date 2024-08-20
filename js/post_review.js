@@ -1,6 +1,6 @@
 const review=(event)=>{
     event.preventDefault();
-    const mango_id=new URLSearchParams(window.location.search).get('mango_id')
+    const mango_id=new URLSearchParams(window.location.search).get('id')
     const token=localStorage.getItem('token')
     const form=document.getElementById('form')
     const formData=new FormData(form)

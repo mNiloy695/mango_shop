@@ -249,6 +249,6 @@ a:hover{
     flex-wrap: wrap;
 }
 
-.slide-menu ul li:hover{
-    background-color: rgb(121, 126, 126);
+.slide-menu ul li a:hover{
+    color: rgb(132, 132, 150); 
 }
