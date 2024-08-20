@@ -44,12 +44,12 @@ const order_table = async () => {
             `;
 
             if (history.order_status === "pending") {
-                tr.innerHTML += `<td class="mt-2 text-danger text-center" onclick="handleUserOrderStatus(${history.id})">Cancel</td>`;
-                tr.innerHTML += `<td class="text-center text-warning">Not Allowed</td>`;
+                tr.innerHTML += `<td class="btn text-danger text-center" onclick="handleUserOrderStatus(${history.id})">X</td>`;
+                tr.innerHTML += `<td class="text-center  text-dark">Not Allowed</td>`;
             } else {
                 tr.innerHTML += `<td class="text-center">${history.order_status}</td>`;
                 if (history.order_status === "completed") {
-                    tr.innerHTML += `<td class="text-warning text-center"><a href="./review_form.html?mango_id=${history.mango}">Review</a></td>`;
+                    tr.innerHTML += `<td class="text-warning text-center"><a class="text-success" href="./review_form.html?mango_id=${history.mango}">Review</a></td>`;
                 } else {
                     tr.innerHTML += `<td class="text-center">Not Allowed</td>`;
                 }

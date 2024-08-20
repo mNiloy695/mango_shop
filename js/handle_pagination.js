@@ -30,7 +30,7 @@ const handleMangoListForPagination=(page_no)=>{
           const div=document.createElement('div')
           
           div.innerHTML=`
-          <div class="card   m-2 col-sm" style="width:16rem; ">
+          <div class="card g-2 m-2  col-sm" style="width:16rem; ">
           <img src="${mango.image}" class="card-img-top img img-fluid mt-5"  alt="...">
           <div class="card-body">
             <h6 class="card-title">${mango.title}</h6>

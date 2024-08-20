@@ -20,7 +20,7 @@ const handleMangoListForPagination=(page_no)=>{
     for(let i=0;i<c;i++){
     const pag=document.getElementById("pag")
     pag.innerHTML+=`
-     <li class="page-item"><a class="page-link" onclick="handleMangoListForPagination(${i+1})">${i}</a></li>`;
+     <li class="page-item"><a class="page-link" onclick="handleMangoListForPagination(${i+1})">${i+1}</a></li>`;
     }
     
       console.log(data)
@@ -29,7 +29,7 @@ const handleMangoListForPagination=(page_no)=>{
         const div=document.createElement('div')
         
         div.innerHTML=`
-        <div class="card g-2 m-2  col-sm" style="width:16rem; ">
+        <div class="card g-2 m-2   col-sm" style="width:16rem; ">
         <img src="${mango.image}" class="card-img-top img-fluid mt-5"  alt="...">
         <div class="card-body">
           <h6 class="card-title">${mango.title}</h6>
