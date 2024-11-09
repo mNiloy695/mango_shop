@@ -9,7 +9,7 @@ const dashboard=async ()=>{
     reviews_id.innerHTML=""
     orders_id.innerHTML=""
     try{
-          const userResponse=await fetch(`https://mango-shop-project-2.onrender.com/user/list/`,{
+          const userResponse=await fetch(`https://mango-shop-ten.vercel.app/user/list/`,{
             method:"GET",
           }) 
           
@@ -25,7 +25,7 @@ const dashboard=async ()=>{
           User <br> ${user.length}
          `
           
-          const reviewResponse=await fetch(`https://mango-shop-project-2.onrender.com/mango/review/`,{
+          const reviewResponse=await fetch(`https://mango-shop-ten.vercel.app/mango/review/`,{
             method:"GET",
           })
           if(!reviewResponse.ok){
@@ -35,7 +35,7 @@ const dashboard=async ()=>{
           reviews_id.innerHTML=`
           Review <br> ${review.length}
           `;
-          const itemResponse=await fetch(`https://mango-shop-project-2.onrender.com/mango/list/`,{
+          const itemResponse=await fetch(`https://mango-shop-ten.vercel.app/mango/list/`,{
             method:"GET",
           })
           if(!itemResponse.ok){
@@ -46,7 +46,7 @@ const dashboard=async ()=>{
           Item <br> ${item.count}
          `
          
-          const orderResponse=await fetch(`https://mango-shop-project-2.onrender.com/mango/purchase/`,{
+          const orderResponse=await fetch(`https://mango-shop-ten.vercel.app/mango/purchase/`,{
             method:"GET",
             headers:{
                 "Content-Type":"application/json",

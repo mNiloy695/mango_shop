@@ -34,7 +34,7 @@ const addMango = async (event) => {
         formData.append('category', selectValue);
 
         // Send data to the server
-        const mangoResponse = await fetch('https://mango-shop-project-2.onrender.com/mango/list/', {
+        const mangoResponse = await fetch('https://mango-shop-ten.vercel.app/mango/list/', {
             method: 'POST',
             headers: {
                 'Authorization': `Token ${token}`

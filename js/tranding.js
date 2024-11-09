@@ -1,5 +1,5 @@
 const tranding=()=>{
-    fetch(`https://mango-shop-project-2.onrender.com/mango/list/`)
+    fetch(`https://mango-shop-ten.vercel.app/mango/list/`)
     .then((res)=>{
         return res.json()
     })

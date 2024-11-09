@@ -8,7 +8,7 @@ const order_table = async () => {
 
     try {
         // Fetch order history
-        const historyResponse = await fetch(`https://mango-shop-project-2.onrender.com/mango/purchase/?user_id=${user_id}`, {
+        const historyResponse = await fetch(`https://mango-shop-ten.vercel.app/mango/purchase/?user_id=${user_id}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -25,7 +25,7 @@ const order_table = async () => {
         // Process each order history
         for (const history of histories) {
             // Fetch mango details
-            const mangoResponse = await fetch(`https://mango-shop-project-2.onrender.com/mango/list/${history.mango}`);
+            const mangoResponse = await fetch(`https://mango-shop-ten.vercel.app/mango/list/${history.mango}`);
             if (!mangoResponse.ok) {
                 throw new Error('Mango details fetch failed');
             }
@@ -75,7 +75,7 @@ const edit=(id)=>{
  const selectValue=id_status.value
  console.log(ide)
  console.log(selectValue);
- fetch(`https://mango-shop-project-2.onrender.com/mango/purchase/${ide}/`,{
+ fetch(`https://mango-shop-ten.vercel.app/mango/purchase/${ide}/`,{
     method:"PUT",
     headers:{
         "Content-Type":"application/json",

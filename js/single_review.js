@@ -2,11 +2,11 @@ const singleReviewHandle=()=>
 {
     const ul=document.getElementById('ul');
     const param=new URLSearchParams(window.location.search).get('id')
-    fetch(`https://mango-shop-project-2.onrender.com/mango/review/?mango_id=${param}`)
+    fetch(`https://mango-shop-ten.vercel.app/mango/review/?mango_id=${param}`)
     .then((res)=>res.json())
     .then((reviews)=>{
         reviews.forEach((review)=>{
-          fetch(`https://mango-shop-project-2.onrender.com/mango/list/${review.mango}/`)
+          fetch(`https://mango-shop-ten.vercel.app/mango/list/${review.mango}/`)
           .then((res) => res.json())
           .then((mango)=>{
             console.log(mango)

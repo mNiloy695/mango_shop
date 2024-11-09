@@ -16,7 +16,7 @@ const review=(event)=>{
     }
     console.log(JSON.stringify(info))
    if(token!=undefined){
-    fetch(`https://mango-shop-project-2.onrender.com/mango/review/?$mango_id=${mango_id}`,{
+    fetch(`https://mango-shop-ten.vercel.app/mango/review/?$mango_id=${mango_id}`,{
         method:'POST',
         headers:{
             "Content-Type":"application/json",

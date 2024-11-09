@@ -1,6 +1,6 @@
 const handleCategory=()=>{
     const cat=document.getElementById("ul");
-    fetch(`https://mango-shop-project-2.onrender.com/mango/categories/`)
+    fetch(`https://mango-shop-ten.vercel.app/mango/categories/`)
     .then((res) => res.json())
     .then((data) =>{
         console.log(data)
@@ -19,7 +19,7 @@ handleCategory()
 
 const categoryOption=()=>{
     const cat=document.getElementById("id_category");
-    fetch(`https://mango-shop-project-2.onrender.com/mango/categories/`)
+    fetch(`https://mango-shop-ten.vercel.app/mango/categories/`)
     .then((res) => res.json())
     .then((data) =>{
         console.log(data)
@@ -36,7 +36,7 @@ const categoryOption=()=>{
 
 const category=()=>{
     const cat=document.getElementById("category");
-    fetch(`https://mango-shop-project-2.onrender.com/mango/categories/`)
+    fetch(`https://mango-shop-ten.vercel.app/mango/categories/`)
     .then((res) => {
         return res.json()
 })

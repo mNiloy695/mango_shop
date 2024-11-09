@@ -16,7 +16,7 @@ const Order = async (event) => {
 
         try {
             // POST the address
-            const addressResponse = await fetch(`https://mango-shop-project-2.onrender.com/mango/user/addresses/`, {
+            const addressResponse = await fetch(`https://mango-shop-ten.vercel.app/mango/user/addresses/`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -49,7 +49,7 @@ const Order = async (event) => {
                 console.log(purchaseFormData);
 
                 // POST the purchase data
-                const purchaseResponse = await fetch(`https://mango-shop-project-2.onrender.com/mango/purchase/`, {
+                const purchaseResponse = await fetch(`https://mango-shop-ten.vercel.app/mango/purchase/`, {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -75,7 +75,7 @@ const Order = async (event) => {
 
 const single_mango_quantity = async (id) => {
     try {
-        const response = await fetch(`https://mango-shop-project-2.onrender.com/mango/list/${id}`);
+        const response = await fetch(`https://mango-shop-ten.vercel.app/mango/list/${id}`);
         if (!response.ok) throw new Error("Mango not found");
         const mango = await response.json();
         console.log(mango);

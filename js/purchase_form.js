@@ -5,7 +5,7 @@ const  purchaseFormHadle=()=>{
 
     console.log(mango_id)
     if(token){
-       fetch(`https://mango-shop-project-2.onrender.com/mango/list/${mango_id}/`)
+       fetch(`https://mango-shop-ten.vercel.app/mango/list/${mango_id}/`)
        .then((res)=>{
         return res.json();
        })

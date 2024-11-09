@@ -9,7 +9,7 @@ const handleMangoDetaile=()=>{
     const param=getQueryParam('id')
     console.log(param)
     const mango_details=document.getElementById('mango-details')
-    fetch(`https://mango-shop-project-2.onrender.com/mango/list/${param}`)
+    fetch(`https://mango-shop-ten.vercel.app/mango/list/${param}`)
     .then((res) => res.json())
     .then((mango)=>
     {

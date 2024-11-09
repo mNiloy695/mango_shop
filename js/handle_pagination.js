@@ -1,7 +1,7 @@
 const handleMangoListForPagination=(page_no)=>{
     const mango_container=document.getElementById('mango-container');
     mango_container.innerHTML=" ";
-    fetch(`https://mango-shop-project-2.onrender.com/mango/list/?page=${page_no?page_no:""}`)
+    fetch(`https://mango-shop-ten.vercel.app/mango/list/?page=${page_no?page_no:""}`)
     .then((res) => res.json())
     .then((data)=>{
       let c=data.count/16;

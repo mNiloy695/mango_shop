@@ -2,7 +2,7 @@ const handleUserOrderStatus=(id)=>{
     const token=localStorage.getItem('token')
     const info={order_status:"cancelled"}
     console.log(JSON.stringify(info))
-    fetch(`https://mango-shop-project-2.onrender.com/mango/purchase/${id}/`,{
+    fetch(`https://mango-shop-ten.vercel.app/mango/purchase/${id}/`,{
        method:"PUT",
        headers: {
         "Content-Type": "application/json", 

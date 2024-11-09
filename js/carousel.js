@@ -1,14 +1,14 @@
 const carouselHandle=()=>{
     let mangoe;
     let reviewere;
-    fetch(`https://mango-shop-project-2.onrender.com/mango/review/`)
+    fetch(`https://mango-shop-ten.vercel.app/mango/review/`)
     .then((res)=>res.json())
     .then((reviews)=>{
         console.log(reviews);
         const carousel=document.getElementById('slide-ul');
         reviews.forEach((review)=>{
               
-            fetch(`https://mango-shop-project-2.onrender.com/mango/list/${review.mango}/`)
+            fetch(`https://mango-shop-ten.vercel.app/mango/list/${review.mango}/`)
             .then((res)=>res.json())
             .then((mango)=>{
                 mangoe=mango;

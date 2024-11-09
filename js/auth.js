@@ -147,7 +147,7 @@ const handleLogout=()=>{
     const token=localStorage.getItem('token')
     console.log(token)
      if(token){
-        fetch(`https://mango-shop-project-2.onrender.com/user/logout/`,{
+        fetch(`https://mango-shop-ten.vercel.app/user/logout/`,{
             method:"POST",
             headers:{'Content-Type': 'application/json',
                 'Authorization':`Token ${token}`,

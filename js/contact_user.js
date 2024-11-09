@@ -12,7 +12,7 @@ const handleContact=(event)=>{
             country:formData.get('country'),
             body:formData.get('body'),
         }
-        fetch(`https://mango-shop-project-2.onrender.com/user/contact/`,{
+        fetch(`https://mango-shop-ten.vercel.app/user/contact/`,{
             method:"POST",
             headers:{"Content-Type":"application/json",
                 "Authorization":`Token ${token}`,

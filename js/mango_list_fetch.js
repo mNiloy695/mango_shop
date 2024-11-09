@@ -2,7 +2,7 @@
 const handleMangoList=(cat_id)=>{
     const mango_container=document.getElementById('mango-container');
     mango_container.innerHTML=" ";
-    fetch(`https://mango-shop-project-2.onrender.com/mango/list/?category_id=${cat_id?cat_id:""}`)
+    fetch(`https://mango-shop-ten.vercel.app/mango/list/?category_id=${cat_id?cat_id:""}`)
     .then((res) => res.json())
     .then((data)=>{
         data.results.forEach((mango)=>
