@@ -21,7 +21,7 @@ handleRegistration=(event)=>{
           
             console.log(registration)
             if(for_api_fetch(registration.username) == undefined){
-                fetch(`https://mango-shop-project-2.onrender.com/user/registration/`,{
+                fetch(`https://mango-shop-ten.vercel.app/user/registration/`,{
                     method:"POST",
                     headers:{"Content-Type":"application/json"},
                     body:JSON.stringify(registration),
@@ -71,7 +71,7 @@ handleRegistration=(event)=>{
 
 const for_api_fetch=(param)=>{
     username=param;
-    fetch(`https://mango-shop-project-2.onrender.com/user/list/?username=${username}`)
+    fetch(`https://mango-shop-ten.vercel.app/user/list/?username=${username}`)
     .then((res) => {
         if(res.ok){
             document.getElementById('error').innerHTML='The user Already exists';
@@ -99,7 +99,7 @@ const handleLogin=(event)=>{
         username:formData.get('username'),
         password:formData.get('password'),
     }
-    fetch(`https://mango-shop-project-2.onrender.com/user/login/`,{
+    fetch(`https://mango-shop-ten.vercel.app/user/login/`,{
         method:"POST",
         headers:{'Content-Type': 'application/json'},
         body:JSON.stringify(login_info),
