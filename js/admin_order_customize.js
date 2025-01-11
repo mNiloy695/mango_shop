@@ -1,14 +1,15 @@
 const order_table = async () => {
-    const tbody = document.getElementById('table-body');
+    const tbody = document.getElementById('table-body'); //table-body
     const token = localStorage.getItem('token');
-    const user_id = localStorage.getItem('user_id');
+    // const user_id = localStorage.getItem('user_id');
     const username = localStorage.getItem('username');
     const name = localStorage.getItem('name');
     const email = localStorage.getItem('email');
 
     try {
-        // Fetch order history
-        const historyResponse = await fetch(`https://mango-shop-ten.vercel.app/mango/purchase/?user_id=${user_id}`, {
+        // Fetch order histoy
+        
+        const historyResponse = await fetch(`https://mango-shop-ten.vercel.app/mango/purchase/`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
